@@ -1,0 +1,28 @@
+
+figure
+{
+    float: right;
+    margin: 5px;
+    
+}
+figure img
+{
+    width: 40vw;
+}
+h2
+{
+    border-bottom: solid red;
+    clear: right;
+}
+div
+{
+    max-width: 11%;
+    border-style: solid;
+    float: left;
+}
+footer
+{
+    clear: left;
+    position: fixed;
+    z-index: -10;
+}

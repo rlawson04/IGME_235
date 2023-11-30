@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+ 	<title>PokeSearch</title>
+ 	<link rel="stylesheet" href="styles/main.css">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<main>
+		<header>
+			<h1><img src="images/header.png" alt="Pokesearch"></h1>
+		</header>
+
+		<nav>
+			<div class="widgets">
+				Type:
+				<select id="type">
+					<!--Value is defined by poke API for each type-->
+					<!--Will add a defalt value-->
+					<option value="default">Any</option>
+					<option value="1">Normal</option>
+					<option value="10">Fire</option>
+					<option value="11">Water</option>
+					<option value="12">Grass</option>
+					<option value="13">Electric</option>
+					<option value="15">Ice</option>
+					<option value="2">Fighting</option>
+					<option value="4">Poison</option>
+					<option value="5">Ground</option>
+					<option value="3">Flying</option>
+					<option value="14">Psychic</option>
+					<option value="7">Bug</option>
+					<option value="6">Rock</option>
+					<option value="8">Ghost</option>
+					<option value="16">Dragon</option>
+					<option value="17">Dark</option>
+					<option value="9">Steel</option>
+					<option value="18">Fairy</option>
+				</select>
+			</div>
+		
+			<div class="widgets">
+				Generation:
+				<select id="generation">
+					<option value="red">1</option>
+					<option value="gold">2</option>
+					<option value="ruby">3</option>
+					<option value="diamond">4</option>
+					<option value="black">5</option>
+					<!--Gen 6-9 currently doesnt work with poke api (all pokemon return 0 game indices)-->
+					<!-- <option value="x">6</option> -->
+					<!--<option value="sun">7</option> -->
+					<!--<option value="sword">8</option> -->
+					<!--<option value="scarlet">9</option> -->
+				</select>
+			</div>
+		
+			<div class="widgets">
+				Sort by:
+				<button type="button" class="sort" onclick="sortAZ()">A-Z<br></button>
+				,
+				<button type="button" class="sort" onclick="sortType()">Type<br></button>
+			</div>
+		</nav>
+	
+		<div class="center">
+			<button type="button" id="search" class="blue">SEARCH!<br></button>
+		</div>
+	
+		<h2>Your Pokedex Entries:</h2>
+
+		<div id="content">
+		<p>No data yet!</p>
+		</div>
+
+		<div id="results">
+		</div>
+	
+		<footer>
+			<a href="https://pokeapi.co">PokeAPI</a>
+			<br>
+			<a href="https://pokeapi.co/docs/v2#info">Documentation</a>			
+		</footer>
+	
+	</main>
+</body>
+</html>
