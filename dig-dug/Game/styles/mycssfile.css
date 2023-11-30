@@ -1,0 +1,96 @@
+h1,h2 
+{ 
+  font-family: 'Times New Roman', Times, serif;
+  border-bottom: 1px solid #a51c23;
+  padding: 2px;
+}
+h2
+{
+    background-color:#d24d00;
+    width: fit-content;
+}
+main,header,footer
+{
+    margin: 0 auto;
+    width: 80vw;
+    padding: 1rem;
+    line-height: 1.5;
+    
+}
+main
+{
+    border-style: solid;
+}
+blockquote 
+{ 
+    background-color: lightgray;
+    background-size: auto;
+    margin-left: 100px;
+    padding: 1rem;
+}
+body 
+{
+    background-color:rgba(220, 233, 44, 0.397);
+    font-family: Arial, sans-serif;
+}
+p
+{
+    margin-left: 100px;
+    background-color:coral;
+    width: fit-content;
+    padding: 10px;
+}
+hr
+{
+    background-color: black;
+}
+ul
+{
+    background-color: #1f509f;
+    background-size: auto;
+    color: aliceblue;
+    margin-left: 100px;
+    text-decoration: underline;
+    
+}
+a:link
+{
+    color:orange
+}
+a:visited
+{
+    color: wheat;
+}
+a:hover
+{
+    color: red;
+}
+a:active
+{
+    color:black;
+}
+a
+{
+    background-color: #1f509f;
+}
+.pictureBig
+{
+    max-width: 50%;
+    max-height: 50%;
+}
+.pictureSmall
+{
+    max-width: 20%;
+    max-height: 20%;
+    padding-right: 55px;
+}
+img.side
+{
+    
+    float:right; margin: 0 12px;
+}
+.pad
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

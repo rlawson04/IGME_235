@@ -1,0 +1,137 @@
+body
+{
+    background-color: #cccccc;
+}
+.container
+{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+header
+{
+    font-size: 50px;
+    color: blue;
+    text-shadow: #FC0 1px 0 10px;
+    background-color: rgba(255, 0, 0, 0.8);
+    padding: 5px;
+    z-index: 5;
+}
+p
+{
+    font-size: 40px;
+    text-shadow: #FC0 1px 0 10px;
+    background-color: rgba(255, 0, 0, 0.6);
+    padding: 10px;
+}
+img
+{
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+button
+{
+    background-color: blue;
+    color: white;
+    font-size: 30px; 
+    padding: 5px;
+}
+footer
+{
+    font-size: 25px;
+    color: #cccccc;
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.button 
+{
+    transition-duration: 0.2s;
+} 
+.button:hover 
+{
+    color: #000;
+}
+.button:active
+{
+    box-shadow: 5px 5px 10px #FC0;
+}
+#top-middle
+{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#center
+{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#below-text
+{
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#bottom-middle
+{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 600px) {
+    body
+    {
+        background-color: blue;
+    }
+    header 
+    {
+      font-size: 20px;
+      padding: 0;
+    }
+    p
+    {
+        font-size: 15px;
+        padding: 0;
+    }
+    button
+    {
+        font-size: 10px;
+    }
+    footer
+    {
+        font-size: 10px;
+    }
+    #top-middle
+    {
+        position: absolute;
+        top: 12%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #center
+    {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #below-text
+    {
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #bottom-middle
+    {
+        position: absolute;
+        bottom: 5%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+  }

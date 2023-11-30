@@ -1,0 +1,59 @@
+*
+{
+    padding: 10px;
+}
+
+body
+{
+    background-color: skyblue;
+    font-size: 18px;
+}
+
+ul
+{
+    list-style: none;
+    display: flex;
+    
+}
+
+li
+{
+    margin-left: auto;
+}
+
+footer
+{
+    display: flex;
+    justify-content: center;
+}
+
+a
+{
+    font-size: 20px;
+}
+
+a:visited
+{
+    color: black;
+}
+
+a:link
+{
+    color: aqua;
+}
+
+a:hover
+{
+    color: yellow;
+}
+
+a:active
+{
+    color: purple;
+}
+
+#info
+{
+    font-size: 18px;
+    background-color: bisque;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mycss.css">
+    <title>random-phrases</title>
+    
+</head>
+<body>
+    <main>
+        <div class="container">
+            <header id="top-middle">
+                Optimus Prime's Sayings
+            </header>
+            <img src="Optimus.jpg" alt="Optimus Prime">
+            <p id="center">Place Holder</p>
+            <button type="button" class="button" id="below-text" onclick="displayQuote()">Next saying!</button>
+            <footer id="bottom-middle">
+                Copy &copy Reilly Lawson 2023
+            </footer>
+        </div>
+        
+    </main>
+
+    <script>
+        "use strict"
+        let sayings = ["Autobots, transform and roll out!",
+        "Now, all we need is a little energon and a lot of luck!",
+        "We've suffered losses, but we've not lost the war.",
+        "I will never stop fighting for our freedom.",
+        "Fate rarely calls upon us at a moment of our choosing."];
+        sayings = sayings.map(function(x){ return x.toUpperCase(); })
+        
+        let button = document.querySelector("button");
+        let p = document.querySelector("p");
+        
+        p.onload = displayQuote();
+
+        function displayQuote()
+        {
+            let i = Math.floor(Math.random() * sayings.length);
+            p.innerHTML = sayings[i];
+        }
+    </script>
+</body>
+</html>

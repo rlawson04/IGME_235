@@ -1,0 +1,49 @@
+h1
+{
+    text-align: center;
+}
+body
+{
+    background-image: linear-gradient(to bottom right, #00202e, black);
+    color: #d4d9e4;
+
+}
+img
+{
+    max-width: 20%;
+    max-height: 20%;
+}
+div
+{
+    display: flex;
+    justify-content: center;
+
+}
+a:link
+{
+    color: #6f3f2c;
+}
+a:visited
+{
+    color: #ffb168;
+}
+a:hover
+{
+    color:aqua
+}
+a:active
+{
+    color:blueviolet
+}
+.textFormat
+{
+    text-align: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: block;
+    width: 500px;
+}
+#projects
+{
+    justify-content: space-around;
+}

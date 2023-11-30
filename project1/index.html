@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS/mycss.css">
+  <link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="media/favicon-32x32.png" sizes="16x16">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <nav>
+      <a href="#home"><img src="media/Logo.png" class="small" alt="Initials"></a>
+      <ul class="menu">
+        <li><a href="#about"> About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div id="wrapper">
+      <header  id="home">
+        <h1>
+          Reilly Lawson's Portfolio
+        </h1>
+      </header>
+
+      <div id="container" class="big">
+        <div id="slideshow">
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="media/DashCodeScreenshot.JPG" class="big, d-block w-100" alt="The large Picture at the top">
+                Screenshot of Dash code for animation
+              </div>
+              <div class="carousel-item">
+                <img src="media/MasterSwordUnity.JPG" class="big, d-block w-100" alt="Screenshot of Unity Mastersword">
+                Master Sword model in Unity Scene
+              </div>
+              <div class="carousel-item">
+                <img src="media/MasterSword.PNG" class="big, d-block w-100" alt="Screenshot of substance painter">
+                Master Sword model in substance painter 3D
+              </div>
+              <div class="carousel-item">
+                <img src="media/CatSkeleton.png" class="big, d-block w-100" alt="Skeletal model of cat racing game cat">
+                Cat model artwork from group artist Sean Bethel
+              </div>
+              <div class="carousel-item">
+                <img src="media/pokesearchScreenshot.JPG" class="big, d-block w-100" alt="Screenshot of pokesearch site">
+                Screenshot of the pokesearch homepage
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="featured">
+        <h2>
+          Featured Project
+        </h2>
+
+        <h3 style="color: red;">
+          Dash
+        </h3>  
+        Dash was a team game that me and three other developers made for our Game Design and Algorithmic Problem Solving 2 course final. Dash is a singleplayer top-down rouge-like that features an endless mode and an adventure mode. The game was created using the monoGame extension for Microsoft Visual Studios. I was responsible for the characters and sprites as well as structuring classes and inheritence. The majority of the time spent on the project was in the character class where I used the sprite sheet to create basic movement animations for the character.
+        <br>
+        <br>
+        *Adventure mode is pictured below
+        <br>
+        <img src="media/DashGame.JPG" alt="Dash game screenshot" style="width: 100%; justify-content: center;">
+      </div>
+            
+      <article class="color" id="about">
+        <h3> 
+          About me
+        </h3>
+        I'm a second year game design and development student at Rochester Institute of Technology. I'm from Middlebury, Vermont, and I enjoy playing story based games and achievement hunting on Steam and PlayStation. 
+      </article>
+
+      <div id="trophies">
+        <img src="https://www.videogameschronicle.com/files/2022/08/ps-trophies.jpg" alt="Playstation Trophies" style="width: 100%;">
+      </div>
+      
+
+      <aside>
+        <img src="media/Headshot.jpg" class="big" alt="Picture of Me">
+        <h2>
+          Projects
+        </h2>
+        <h3>*Still in progress</h3>
+        <h3>Cat Racing Game (Title Pending) *</h3>
+        The cat racing game is exactly as it sounds. A game that combines the cuteness of furry cats and the aggressiveness of a fast paced racing environment with guns! This game is an eight person project that we are developing in Unreal Engine which is a first for any of us. The game is meant to be a fun project that is also educational for each of us.
+        <img src="media/CatSkeleton.png" alt="Cat skeleton">
+        Cat model artwork from group artist Sean Bethel
+        <br>
+        <br>
+        <h3>Master Sword</h3>
+        The Master Sword from Legend Of Zelda was the reference for this 3d asset which I created as an assignment in my 3D Animation and Asset Production course. The model was created using Autodesk Maya while the textures were created using Adobe's 3d Substance Painter. I decided to use a gold blade instead of the traditional silver to make it stand out a little more than just copying the original.
+        <img src="media/MasterSword.PNG" alt="screenshot of pokesearch site">
+        <br>
+        <br>
+        <h3>PokeSearch</h3>
+        Pokesearch is a website I designed using the online open source Poke Api. The site allows you to  search for any number of pokemon given thier type and generation. It also allows the list of results to be sorted alphabetically by name and also by type if none was selected. <a href="https://people.rit.edu/rbl2991/235/project2/">Click Here</a> to visit pokesearch!
+        <img src="media/pokesearchScreenshot.JPG" alt="screenshot of pokesearch site">
+      </aside>  
+
+      <footer id ="contact"> <a href="https://www.linkedin.com/in/reilly-lawson-758b15249/"><img src="media/LI-In-Bug.png" class="small" alt="linked in profile"></a> <a href="https://github.com/rlawson04"><img src="media/github-mark-white.png" class="small" alt="GitHub profile"></a> <a href="mailto:rbl2991@g.rit.edu"> <img src="media/gmail.png" class="small" alt="gmail logo"></a> </footer>
+    
+    </div>
+  </main>
+</body>
+</html>

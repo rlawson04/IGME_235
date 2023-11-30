@@ -1,0 +1,144 @@
+html{
+    font-size: 18px;
+    font-family: Calibri, Helvetica, Arial, sans-serif;
+}
+body{
+    background-color: skyblue;
+}
+header{
+    padding-top: 80px;
+    color: azure;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #93af69;
+}
+article,aside,div{
+    padding: 1rem;
+}
+article{
+    font-size: 22px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+aside{
+    font-size: 22px;
+}
+h1{
+    font-size: 40pt;
+}
+h2{
+    font-size:xx-large;
+}
+h3{
+    font-size: larger;
+}
+nav{
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    border-bottom: 1px solid snow;
+    background-color: skyblue;
+}
+ul.menu{
+    display: flex;
+    list-style: none;
+}
+.menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    margin-top: 10px;
+    padding: 15px;
+    font-size: 20px;
+    transition: transform 0.1s ease-in, background-color 0.5s linear;
+}
+.menu li{
+    width: 100%;
+}
+.menu a:hover{
+    transform:scale(1.2);
+	color: yellow;
+}
+.big{
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.small{
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+}
+#trophies{
+    max-width: 100%;
+}
+.color{
+    background-color: #93af69;
+}
+#featured{
+    font-size: 22px;
+}
+aside img{
+    width: 100%;
+    margin-top: 10px;
+}
+#wrapper{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: "header" "mainimage" "featured" "article" "aside" "footer";
+
+}
+header{
+    grid-area: header;
+}
+aside{
+    grid-area: aside;
+}
+.big{
+    grid-area: mainimage;
+}
+#trophies{
+    grid-area: subimage;
+}
+#featured {
+    grid-area: featured;
+}
+article{
+    grid-area: article;
+}
+footer{
+    grid-area: footer;
+}
+@media screen and (min-width: 768px){
+    #wrapper{
+        grid-template-areas: 
+        "header header header"
+        "mainimage mainimage aside"
+        "article subimage aside " 
+        "featured featured aside"
+        "footer footer footer";
+        grid-template-rows: auto;
+        grid-template-columns: 40% 25% 35%;
+    }
+}
+@media screen and (max-width: 768px){
+    #wrapper{
+        grid-template-areas: 
+        "header header"
+        "mainimage mainimage"
+        "aside aside"
+        "featured featured"
+        "subimage subimage"
+        "article article"
+        "footer footer";
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        padding:0%;
+    }
+}
